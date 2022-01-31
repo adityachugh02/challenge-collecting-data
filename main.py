@@ -161,6 +161,18 @@ def get_data_from_link(link):
 		surface_plot.append(None)
 		print("Surface of plot: ", surface_plot[-1])
 
+	#surface (living area)
+	buffer = soup.find_all("tr", {"class": "classified-table__row"})
+	str_match = [s.text for s in buffer if "Living area" in s.text]
+	if str_match:
+		buffer = " ".join(re.sub(r'[^0-9]+', '', str_match[0]).split())
+		surface.append(buffer.replace("Living area ", ""))
+		print("Surface (living area): ", surface[-1])
+	else: 
+		surface.append(None)
+		print("Surface (living area): ", surface[-1])
+
+
 	#facades
 	buffer = soup.find_all("tr", {"class": "classified-table__row"})
 	content = [t.text for t in buffer if "Number of frontages" in t.text]
