@@ -103,7 +103,10 @@ def get_data_from_link(link):
 	str_match = [s.text for s in buffer if "Furnished" in s.text]
 	if str_match:
 		buffer = " ".join(re.sub(r'[^A-Za-z0-9 -]+', '', str_match[0]).split())
-		furnished.append(buffer.replace("Furnished ", ""))
+		if buffer.replace("Furnished ", "") == "Yes":
+			furnished.append(1)
+		else:
+			furnished.append(0)
 		print("Furnished: ", furnished[-1])
 	else: 
 		furnished.append(None)
@@ -114,10 +117,10 @@ def get_data_from_link(link):
 	content = [t.text for t in buffer if "fireplaces" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^A-Za-z0-9 -]+', '', content[0]).split())
-		open_fire.append(buffer.replace("fireplaces", ""))
+		open_fire.append(1)
 		print("Open fire: ", open_fire[-1])
 	else:
-		open_fire.append("No")
+		open_fire.append(0)
 		print("Open fire: ", open_fire[-1])
 
 	#terrace & terrace_area
@@ -125,12 +128,12 @@ def get_data_from_link(link):
 	content = [t.text for t in buffer if "Terrace surface" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^0-9]+', '', content[0]).split())
-		terrace.append("Yes")
+		terrace.append(1)
 		terrace_area.append(buffer.replace("Terrace surface ", ""))
 		print("Terrace: ", terrace[-1])
 		print("terrace area: ", terrace_area[-1])
 	else:
-		terrace.append("No")
+		terrace.append(0)
 		terrace_area.append(None)
 		print("Terrace: ", terrace[-1])
 		print("Terrace area: ", terrace_area[-1])
@@ -140,12 +143,12 @@ def get_data_from_link(link):
 	content = [t.text for t in buffer if "Garden" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^0-9]+', '', content[0]).split())
-		garden.append("Yes")
+		garden.append(1)
 		garden_area.append(buffer.replace("Garden surface ", ""))
 		print("Garden: ", garden[-1])
 		print("Garden area: ", garden_area[-1])
 	else:
-		garden.append("No")
+		garden.append(0)
 		garden_area.append(None)
 		print("Garden: ", garden[-1])
 		print("Garden area: ", garden_area[-1])
@@ -189,10 +192,10 @@ def get_data_from_link(link):
 	content = [t.text for t in buffer if "Swimming pool" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^A-Za-z0-9 -]+', '', content[0]).split())
-		swimming_pool.append("Yes")
+		swimming_pool.append(1)
 		print("swimming pool: ", swimming_pool[-1])
 	else:
-		swimming_pool.append("No")
+		swimming_pool.append(0)
 		print("swimming pool: ", swimming_pool[-1])
 
 	#state
