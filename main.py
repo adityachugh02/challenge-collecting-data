@@ -35,7 +35,7 @@ def get_data_from_link(link):
 	#price
 	for div_containing_price in soup.find_all("p", {"class":"classified__price"}):
 		buffer = div_containing_price.find("span", {"class":"sr-only"})
-		buffer = " ".join(re.sub(r'[^0-9]+', '', buffer.text).split())
+		buffer = " ".join(re.sub(r'[^0-9 -]+', '', buffer.text).split())
 	if buffer != None:
 		price.append(buffer)
 		print("Price: ", price[-1])
@@ -211,6 +211,28 @@ def get_data_from_link(link):
 		state.append(None)
 		print("State: ", state[-1])
 
+	df = pd.DataFrame()
+	df["locality"] = locality
+	df["proprety_type"] = proprety_type
+	df["price"] = price
+	df["rooms"] = rooms
+	df["area"] = area
+	df["equipped_kitchen"] = equipped_kitchen
+	df["furnished"] = furnished
+	df["open_fire"] = open_fire
+	df["terrace"] = terrace
+	df["terrace_area"] = terrace_area
+	df["garden"] = garden
+	df["garden_area"] = garden_area
+	df["surface"] = surface
+	df["surface_plot"] = surface_plot
+	df["facades"] = facades
+	df["swimming_pool"] = swimming_pool
+	df["state"] = state
+
+	df.to_csv("data.csv", mode='w', header=True)
+
+
 counter = 0
 i = 4
 for i in range(333):
@@ -240,27 +262,3 @@ for i in range(1):
 		print(link["href"])
 		get_data_from_link(link["href"])
 
-print(len(price))
-print(len(locality))
-print(len(equipped_kitchen))
-
-df = pd.DataFrame()
-df["locality"] = locality
-df["proprety_type"] = proprety_type
-df["price"] = price
-df["rooms"] = rooms
-df["area"] = area
-df["equipped_kitchen"] = equipped_kitchen
-df["furnished"] = furnished
-df["open_fire"] = open_fire
-df["terrace"] = terrace
-df["terrace_area"] = terrace_area
-df["garden"] = garden
-df["garden_area"] = garden_area
-df["surface"] = surface
-df["surface_plot"] = surface_plot
-df["facades"] = facades
-df["swimming_pool"] = swimming_pool
-df["state"] = state
-
-df.to_csv("data.csv", encoding="utf-8")

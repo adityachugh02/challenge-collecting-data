@@ -1,0 +1,185 @@
+,locality,proprety_type,price,rooms,area,equipped_kitchen,furnished,open_fire,terrace,terrace_area,garden,garden_area,surface,surface_plot,facades,swimming_pool,state
+0,1861 Wolvertem,Villa,,5,257,,,0,0,,0,,257,2101,4,0, Good
+1,1861 Wolvertem,Farmhouse,,3,344,,,0,0,,0,,344,2014,,0, To be done up
+2,1080 Molenbeek-Saint-Jean,Mixed-use building,,4,,Not installed,,0,0,,0,,,,2,0, To renovate
+3,2800 Mechelen,House,,3,,,,0,0,,0,,,,,0,
+4,4342 Hognoul,House,,3,,,,0,0,,0,,,,,0,
+5,6001 Marcinelle,House,1,2,134,Installed,,0,0,,0,,134,,2,0,
+6,8920 Langemark-Poelkapelle,Bouwgronden en nieuwe won,2500 374982,,,,,0,0,,0,,,,,0,
+7,1570 Galmaarden,Mixed-use building,2500,1,,,,0,0,,0,,,,3,0, As new
+8,9190 Stekene,Villa,2500,6,318,Installed,0.0,1,1,36,1,1500,318,3100,4,1, Good
+9,3290 Diest,House,4356,2,174,Semi equipped,0.0,0,0,,0,,174,285,2,0, To renovate
+10,5600 Jamagne,Other properties,6247,,,,,0,0,,0,,,,,0,
+11,8400 Oostende,AntonyTuin,6250 285475,,,,,0,0,,0,,,,,0,
+12,4032 Chne,House,10000,6,,,,0,0,,0,,,246,3,0, To restore
+13,7340 Paturages,House,10000,1,,,,0,0,,0,,,,,0,
+14,6000 Charleroi,House,10000,4,210,Installed,0.0,0,0,,1,,210,50,2,0, To be done up
+15,6534 GOZE,Villa,10000,2,153,,0.0,0,0,,0,,153,,,0,
+16,6941 Tohogne,Chalet,14500,1,45,Not installed,0.0,0,0,,1,160,45,200,4,0, To renovate
+17,5600 Philippeville Sautour,Chalet,14900,2,50,Not installed,0.0,0,0,,1,255,50,305,4,0, To renovate
+18,4400 Flmalle,House,15000,2,,,,0,0,,0,,,,,0,
+19,7390 Quaregnon,House,15000,2,,,,0,0,,0,,,,,0,
+20,9000 Gent,House,17500,,,,,0,0,,0,,,11,,0,
+21,7012 Jemappes,House,18000,,,Not installed,0.0,0,0,,0,,,39,2,0,
+22,4920 Aywaille,House,20000,1,70,Installed,0.0,0,1,18,1,140,70,235,,0, Good
+23,4540 Amay,House,20000,2,,,,0,0,,0,,,57,2,0, To renovate
+24,2900 Schoten,Bungalow,20000,1,43,,,0,0,,0,,43,,4,0, Good
+25,4020 Lige,House,20000,2,,,,0,0,,0,,,70,2,0, To renovate
+26,5300 Andenne,House,20000,2,,,,0,0,,0,,,,,0,
+27,7950 Chivres,House,20000,1,,,,0,0,,0,,,,,0,
+28,7040 Quvy-le-Petit,House,20000,1,,,,0,0,,0,,,,,0, To be done up
+29,2500 Lier,Residentie Olivia - Levensloopbestendige app,193820 337974,,,,,0,0,,0,,,,,0,
+30,8670 Oostduinkerke,Studio,179000,,,,,0,0,,0,,,,,0,
+31,2500 Lier,Apartment,207174,1,70,Hyper equipped,0.0,0,1,7,0,,70,,2,0,
+32,2500 Lier,Apartment,193820,1,68,Hyper equipped,0.0,0,1,10,0,,68,,2,0,
+33,2240 MASSENHOVEN,Apartment,319000,3,120,USA installed,0.0,0,1,18,0,,120,,3,0, As new
+34,3890 MONTENAKEN,House,290000,2,97,Installed,0.0,0,0,,1,,97,564,4,0, Good
+35,1160 Auderghem,Apartment,300000,2,80,Hyper equipped,0.0,0,1,2,0,,80,,2,0,
+36,6030 Marchienne-au-Pont,House,99000,4,190,Semi equipped,0.0,0,0,,0,,190,,,0, To renovate
+37,1861 Wolvertem,Villa,,5,257,,,0,0,,0,,257,2101,4,0, Good
+38,1861 Wolvertem,Farmhouse,,3,344,,,0,0,,0,,344,2014,,0, To be done up
+39,1080 Molenbeek-Saint-Jean,Mixed-use building,,4,,Not installed,,0,0,,0,,,,2,0, To renovate
+40,2800 Mechelen,House,,3,,,,0,0,,0,,,,,0,
+41,4342 Hognoul,House,,3,,,,0,0,,0,,,,,0,
+42,6001 Marcinelle,House,1,2,134,Installed,,0,0,,0,,134,,2,0,
+43,8920 Langemark-Poelkapelle,Bouwgronden en nieuwe won,2500 374982,,,,,0,0,,0,,,,,0,
+44,1570 Galmaarden,Mixed-use building,2500,1,,,,0,0,,0,,,,3,0, As new
+45,9190 Stekene,Villa,2500,6,318,Installed,0.0,1,1,36,1,1500,318,3100,4,1, Good
+46,3290 Diest,House,4356,2,174,Semi equipped,0.0,0,0,,0,,174,285,2,0, To renovate
+47,5600 Jamagne,Other properties,6247,,,,,0,0,,0,,,,,0,
+48,8400 Oostende,AntonyTuin,6250 285475,,,,,0,0,,0,,,,,0,
+49,4032 Chne,House,10000,6,,,,0,0,,0,,,246,3,0, To restore
+50,7340 Paturages,House,10000,1,,,,0,0,,0,,,,,0,
+51,6000 Charleroi,House,10000,4,210,Installed,0.0,0,0,,1,,210,50,2,0, To be done up
+52,6534 GOZE,Villa,10000,2,153,,0.0,0,0,,0,,153,,,0,
+53,6941 Tohogne,Chalet,14500,1,45,Not installed,0.0,0,0,,1,160,45,200,4,0, To renovate
+54,5600 Philippeville Sautour,Chalet,14900,2,50,Not installed,0.0,0,0,,1,255,50,305,4,0, To renovate
+55,4400 Flmalle,House,15000,2,,,,0,0,,0,,,,,0,
+56,7390 Quaregnon,House,15000,2,,,,0,0,,0,,,,,0,
+57,9000 Gent,House,17500,,,,,0,0,,0,,,11,,0,
+58,7012 Jemappes,House,18000,,,Not installed,0.0,0,0,,0,,,39,2,0,
+59,4920 Aywaille,House,20000,1,70,Installed,0.0,0,1,18,1,140,70,235,,0, Good
+60,4540 Amay,House,20000,2,,,,0,0,,0,,,57,2,0, To renovate
+61,2900 Schoten,Bungalow,20000,1,43,,,0,0,,0,,43,,4,0, Good
+62,4020 Lige,House,20000,2,,,,0,0,,0,,,70,2,0, To renovate
+63,5300 Andenne,House,20000,2,,,,0,0,,0,,,,,0,
+64,7950 Chivres,House,20000,1,,,,0,0,,0,,,,,0,
+65,7040 Quvy-le-Petit,House,20000,1,,,,0,0,,0,,,,,0, To be done up
+66,1430 Rebecq,Villa,420000,4,214,Installed,0.0,0,1,40,1,,214,1410,,0, Good
+67,1400 Nivelles,Duplex,250000,3,108,Installed,0.0,0,0,,0,,108,,,0, Good
+68,6870 Saint-Hubert,House,289000,6,338,Hyper equipped,0.0,0,0,,1,1320,338,,,0, Good
+69,2340 Beerse,House,265000,4,190,,0.0,0,0,,0,,190,872,4,0, To renovate
+70,8520 Kuurne,House,268000,3,125,,0.0,0,0,,0,,125,254,2,0, To renovate
+71,2500 Lier,Residentie Olivia - Levensloopbestendige app,193820 337974,,,,,0,0,,0,,,,,0,
+72,8670 Oostduinkerke,Studio,179000,,,,,0,0,,0,,,,,0,
+73,2500 Lier,Apartment,207174,1,70,Hyper equipped,0.0,0,1,7,0,,70,,2,0,
+74,6180 Courcelles,Villa,20000,2,150,Installed,0.0,0,0,,0,,150,400,4,0, Good
+75,9660 Brakel,House,22500,,,,,0,0,,0,,,13,,0,
+76,4141 Louveign,House,25000,1,61,,,0,0,,0,,61,360,4,0, To renovate
+77,4590 Ouffet,Country house,25000,3,,Not installed,,0,0,,0,,,185,3,0, To restore
+78,7100 La Louvire,House,25000,2,,,,0,0,,0,,,190,2,0, To restore
+79,6940 Grandhan,Chalet,25000,1,,,1.0,0,0,,0,,,,4,0,
+80,4400 Flmalle,House,25000,3,,,,0,0,,0,,,,,0,
+81,7784 Comines-Warneton,House,25000,2,,,,0,0,,0,,,80,,0, To renovate
+82,5540 Hastire,Chalet,25000,2,49,,0.0,0,0,,0,,49,,4,0, To renovate
+83,5540 Hastire,Chalet,25000,,,,,0,0,,1,1,,300,4,0,
+84,5540 Hastire-Lavaux,Chalet,25000,1,60,,0.0,0,0,,0,,60,750,,0,
+85,7620 Hollain,House,25000,3,,,0.0,0,0,,0,,,,,1, Good
+86,6061 Montignies-sur-Sambre,House,25000,1,100,Installed,0.0,0,0,,0,,100,227,,0,
+87,6592 Monceau-Imbrechies,Bungalow,25000,2,,,,0,0,,0,,,,,0,
+88,3920 Lommel,House,27000,1,,,,0,0,,0,,,,,0,
+89,3920 Lommel,House,29500,2,,,,0,0,,0,,,,,0,
+90,4000 Glain,House,30000,2,153,,,0,0,,0,,153,89,2,0, To renovate
+91,4030 Grivegne,House,30000,1,,,,0,0,,1,305,,344,2,0, To renovate
+92,4020 Jupille-sur-Meuse,House,30000,2,135,,,0,0,,0,,135,225,3,0, To renovate
+93,6040 Jumet,House,30000,3,,Installed,,0,0,,0,,,,2,0,
+94,4300 Waremme,House,30000,2,,,,0,0,,0,,,220,,0, To renovate
+95,7780 Comines,House,30000,2,,,,0,0,,0,,,160,2,0, To renovate
+96,3700 Tongeren,House,30000,2,,,,0,0,,0,,,214,3,0,
+97,6180 Courcelles,House,30000,4,,,,0,0,,0,,,,,0,
+98,6940 Durbuy,Chalet,30000,1,40,Installed,1.0,0,0,,0,,40,280,4,1, Good
+99,1820 Steenokkerzeel,Mixed-use building,30000,,,,,0,0,,0,,,,2,0,
+100,6769 Meix-devant-Virton,House,32500,2,139,,0.0,0,0,,0,,139,150,2,0, To renovate
+101,7860 Lessines,House,32500,3,,,,0,0,,0,,,,2,0,
+102,3920 Lommel,House,32500,2,,,1.0,0,0,,0,,,,,0, As new
+103,4020 Bressoux,House,35000,1,,,,0,0,,0,,,1034,4,0, To restore
+104,1430 Rebecq,Villa,420000,4,214,Installed,0.0,0,1,40,1,,214,1410,,0, Good
+105,1400 Nivelles,Duplex,250000,3,108,Installed,0.0,0,0,,0,,108,,,0, Good
+106,6870 Saint-Hubert,House,289000,6,338,Hyper equipped,0.0,0,0,,1,1320,338,,,0, Good
+107,2340 Beerse,House,265000,4,190,,0.0,0,0,,0,,190,872,4,0, To renovate
+108,8520 Kuurne,House,268000,3,125,,0.0,0,0,,0,,125,254,2,0, To renovate
+109,2500 Lier,Residentie Olivia - Levensloopbestendige app,193820 337974,,,,,0,0,,0,,,,,0,
+110,8670 Oostduinkerke,Studio,179000,,,,,0,0,,0,,,,,0,
+111,2500 Lier,Apartment,207174,1,70,Hyper equipped,0.0,0,1,7,0,,70,,2,0,
+112,6890 VILLANCE,House,35000,1,55,Not installed,0.0,0,0,,0,,55,110,3,0, To renovate
+113,6890 VILLANCE,Other properties,35000,1,55,Not installed,0.0,0,0,,0,,55,110,3,0, To renovate
+114,6890 VILLANCE,Country house,35000,1,55,Not installed,0.0,0,0,,0,,55,110,3,0, To renovate
+115,6890 VILLANCE,Manor house,35000,1,55,Not installed,0.0,0,0,,0,,55,110,3,0, To renovate
+116,4420 Saint-Nicolas,House,35000,1,88,,,0,0,,0,,88,,2,0, To renovate
+117,6061 Montignies-sur-Sambre,House,35000,3,,,,0,0,,0,,,,2,0, To restore
+118,6183 Trazegnies,House,35000,2,,,,0,0,,0,,,,2,0,
+119,6020 Dampremy,House,35000,2,,,,0,0,,0,,,,,0, To renovate
+120,6592 Monceau-Imbrechies,House,35000,3,,,,0,0,,0,,,,,0,
+121,7390 Quaregnon,House,35000,2,94,Installed,,0,0,,0,,94,44,2,0, To renovate
+122,5575 Willerzie,House,35000,5,300,,,0,0,,0,,300,300,2,0, To restore
+123,5620 Saint-Aubin,House,35000,2,,,,0,0,,0,,,493,,0,
+124,6224 Wanferce-Baulet,House,35000,2,,,,0,0,,0,,,160,,0, To renovate
+125,7012 Jemappes,House,35000,2,,,,0,0,,0,,,,2,0,
+126,5580 Jemelle,House,39000,2,120,Not installed,0.0,0,0,,1,10,120,99,2,0, Good
+127,6061 Montignies-sur-Sambre,Town-house,39000,2,,,0.0,0,0,,0,,,310,,0, As new
+128,3920 Lommel,House,39000,2,,,,0,0,,0,,,,,0,
+129,8200 Sint-Andries,House,39400,,15,,0.0,0,0,,0,,15,,,1, Good
+130,3920 Lommel,House,39500,2,,,,0,0,,0,,,,,0,
+131,7100 HAINE-SAINT-PIERRE,House,39999,2,62,Not installed,0.0,0,1,7,1,56,62,95,2,1, To renovate
+132,4100 Seraing,House,40000,2,76,,,0,0,,0,,76,114,2,0, To renovate
+133,7012 Jemappes,House,40000,2,94,,0.0,0,0,,0,,94,150,2,0, To renovate
+134,8930 Menen,House,40000,2,49,,,0,0,,0,,49,49,2,0, To be done up
+135,7170 Manage,House,40000,3,,,,0,0,,0,,,620,2,0, To renovate
+136,7390 Quaregnon,House,40000,2,60,,0.0,0,0,,0,,60,,3,0, To renovate
+137,6567 Merbes-le-Chteau,House,40000,4,173,,,0,0,,0,,173,370,2,0,
+138,7160 Chapelle-lez-Herlaimont,House,40000,2,,,,0,0,,0,,,,2,0,
+139,7390 Quaregnon,House,40000,2,,Not installed,,0,0,,0,,,,2,0,
+140,7350 Hensies,House,40000,1,,,0.0,0,0,,0,,,162,3,0,
+141,5660 Brly,House,40000,2,,,,0,0,,0,,,930,,0,
+142,1430 Rebecq,Villa,420000,4,214,Installed,0.0,0,1,40,1,,214,1410,,0, Good
+143,1400 Nivelles,Duplex,250000,3,108,Installed,0.0,0,0,,0,,108,,,0, Good
+144,6870 Saint-Hubert,House,289000,6,338,Hyper equipped,0.0,0,0,,1,1320,338,,,0, Good
+145,2340 Beerse,House,265000,4,190,,0.0,0,0,,0,,190,872,4,0, To renovate
+146,8520 Kuurne,House,268000,3,125,,0.0,0,0,,0,,125,254,2,0, To renovate
+147,2500 Lier,Residentie Olivia - Levensloopbestendige app,193820 337974,,,,,0,0,,0,,,,,0,
+148,8670 Oostduinkerke,Studio,179000,,,,,0,0,,0,,,,,0,
+149,2500 Lier,Apartment,207174,1,70,Hyper equipped,0.0,0,1,7,0,,70,,2,0,
+150,6041 Gosselies,House,40000,2,,,,0,0,,0,,,,,0,
+151,7131 Waudrez,House,40000,2,,,,0,0,,0,,,442,2,0,
+152,7380 Quivrain,House,40000,4,,,,0,0,,0,,,467,,0,
+153,6250 ROSELIES,Villa,40000,3,132,,0.0,0,0,,0,,132,950,4,0, Good
+154,3690 Zutendaal,Chalet,40000,1,56,,,0,0,,0,,56,1879,,0, Good
+155,6200 Chtelet,House,40000,3,,,,0,0,,0,,,240,,0, To renovate
+156,9600 Ronse,House,42500,2,,,,0,0,,0,,,110,,0,
+157,7011 Ghlin,Ghlin,43000 281000,,,,,0,0,,0,,,,,0,
+158,7012 Flnu,House,43000,2,70,Not installed,,0,0,,0,,70,50,3,0, To renovate
+159,5540 Hastiere,Chalet,44900,1,25,Installed,0.0,0,0,,1,225,25,250,4,1, Just renovated
+160,6040 Jumet,House,45000,2,,,,0,0,,0,,,250,3,0, To renovate
+161,5600 MERLEMONT,Other properties,45000,,,,,0,0,,0,,,831,,0,
+162,5600 MERLEMONT,Other properties,45000,,,,,0,0,,0,,,890,,0,
+163,7380 Quivrain,House,45000,2,100,,0.0,0,0,,0,,100,80,2,0,
+164,6040 Jumet,House,45000,2,60,,0.0,0,0,,0,,60,332,,0,
+165,6040 Jumet,House,45000,1,70,Installed,0.0,0,0,,0,,70,,,0,
+166,7190 Ecaussinnes,Transversale,45000 225000,,,,,0,0,,0,,,,,0,
+167,5575 Willerzie,House,45000,2,150,,,0,0,,0,,150,250,2,0, To renovate
+168,6030 Marchienne-au-Pont,House,45000,3,100,Not installed,0.0,0,0,,0,,100,340,,0,
+169,5650 Yves-Gomeze,House,45000,1,,,,0,0,,0,,,1101,3,0, To restore
+170,6044 Roux,House,45000,4,,Installed,,0,0,,0,,,184,3,0, To be done up
+171,6500 Beaumont,House,45000,2,,,0.0,0,0,,1,270,,310,4,0, To restore
+172,7340 WASMES,House,45000,2,,Not installed,0.0,0,0,,0,,,155,,0,
+173,7301 Hornu,House,45000,3,,,,0,0,,0,,,,,0,
+174,6020 Dampremy,House,45000,2,,,,0,0,,0,,,,,0,
+175,4260 Ville-en-Hesbaye,House,46000,5,341,Semi equipped,0.0,0,1,11,1,950,341,1345,4,1, To be done up
+176,7100 La Louviere,House,46000,2,63,,0.0,0,0,,0,,63,35,2,1, To renovate
+177,4570 Marchin,Marchin - Rue Vico del Ga,47000 226700,,,,,0,0,,0,,,,,0,
+178,7390 Quaregnon,House,49000,2,102,Not installed,0.0,0,0,,0,,102,330,3,0, To restore
+179,6040 Jumet,House,49000,2,85,Not installed,0.0,0,0,,0,,85,78,2,1, To renovate
+180,1430 Rebecq,Villa,420000,4,214,Installed,0.0,0,1,40,1,,214,1410,,0, Good
+181,1400 Nivelles,Duplex,250000,3,108,Installed,0.0,0,0,,0,,108,,,0, Good
+182,6870 Saint-Hubert,House,289000,6,338,Hyper equipped,0.0,0,0,,1,1320,338,,,0, Good
+183,2340 Beerse,House,265000,4,190,,0.0,0,0,,0,,190,872,4,0, To renovate
