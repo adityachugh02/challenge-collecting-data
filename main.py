@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import re
+import pandas as pd
 
 driver = webdriver.Chrome(r"C:/Users/Aditya Chugh/Desktop/becode/chromedriver.exe")
 
@@ -226,3 +227,24 @@ for i in range(1):
 print(len(price))
 print(len(locality))
 print(len(equipped_kitchen))
+
+df = pd.DataFrame()
+df["locality"] = locality
+df["proprety_type"] = proprety_type
+df["price"] = price
+df["rooms"] = rooms
+df["area"] = area
+df["equipped_kitchen"] = equipped_kitchen
+df["furnished"] = furnished
+df["open_fire"] = open_fire
+df["terrace"] = terrace
+df["terrace_area"] = terrace_area
+df["garden"] = garden
+df["garden_area"] = garden_area
+df["surface"] = surface
+df["surface_plot"] = surface_plot
+df["facades"] = facades
+df["swimming_pool"] = swimming_pool
+df["state"] = state
+
+df.to_csv("data.csv", index=False)
