@@ -35,8 +35,9 @@ def get_data_from_link(link):
 	#price
 	for div_containing_price in soup.find_all("p", {"class":"classified__price"}):
 		buffer = div_containing_price.find("span", {"class":"sr-only"})
+		buffer = " ".join(re.sub(r'[^0-9]+', '', buffer.text).split())
 	if buffer != None:
-		price.append((buffer.text))
+		price.append(buffer)
 		print("Price: ", price[-1])
 	else:
 		price.append(None)
@@ -211,9 +212,24 @@ def get_data_from_link(link):
 		print("State: ", state[-1])
 
 counter = 0
+i = 4
+for i in range(333):
+
+	url = f"https://www.immoweb.be/en/search/house/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=cheapest"
+	print("\n", url, "\n")
+	driver.get(url)
+	soup = BeautifulSoup(driver.page_source, "lxml")
+
+	for link in soup.find_all("a", {"class":"card__title-link"}):
+		counter += 1
+		print(f"Page number: {i}, Link count: {counter}")
+		print(link["href"])
+		get_data_from_link(link["href"])
+
+i = 0
 for i in range(1):
 
-	url = f"https://www.immoweb.be/en/search/house/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=relevance"
+	url = f"https://www.immoweb.be/en/search/house/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=most_expensive"
 	print("\n", url, "\n")
 	driver.get(url)
 	soup = BeautifulSoup(driver.page_source, "lxml")
@@ -247,4 +263,4 @@ df["facades"] = facades
 df["swimming_pool"] = swimming_pool
 df["state"] = state
 
-df.to_csv("data.csv", index=False)
+df.to_csv("data.csv", encoding="utf-8")
