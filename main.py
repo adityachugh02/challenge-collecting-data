@@ -35,13 +35,13 @@ def get_data_from_link(link):
 	#price
 	for div_containing_price in soup.find_all("p", {"class":"classified__price"}):
 		buffer = div_containing_price.find("span", {"class":"sr-only"})
-		buffer = " ".join(re.sub(r'[^0-9 -]+', '', buffer.text).split())
+		buffer = (re.findall('^[^\d]*(\d+)', buffer.text))
 	if buffer != None:
-		price.append(buffer)
-		print("Price: ", price[-1])
+		price.append(buffer[0])
+		print("Price (take cheapest option): ", price[-1])
 	else:
 		price.append(None)
-		print("Price: ", price[-1])
+		print("Price (take cheapest option): ", price[-1])
 
 	#locality
 	try:
@@ -105,7 +105,7 @@ def get_data_from_link(link):
 	str_match = [s.text for s in buffer if "Furnished" in s.text]
 	if str_match:
 		buffer = " ".join(re.sub(r'[^A-Za-z0-9 -]+', '', str_match[0]).split())
-		if buffer.replace("Furnished ", "") == "Yes":
+		if "Yes" in buffer.replace("Furnished ", ""):
 			furnished.append(1)
 		else:
 			furnished.append(0)
@@ -116,13 +116,13 @@ def get_data_from_link(link):
 
 	#open_fire
 	buffer = soup.find_all("tr", {"class": "classified-table__row"})
-	content = [t.text for t in buffer if "fireplaces" in t.text]
+	content = [t.text for t in buffer if "Fireplaces" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^A-Za-z0-9 -]+', '', content[0]).split())
-		open_fire.append(1)
+		open_fire.append(buffer.replace("Fireplaces ", ""))
 		print("Open fire: ", open_fire[-1])
 	else:
-		open_fire.append(0)
+		open_fire.append(None)
 		print("Open fire: ", open_fire[-1])
 
 	#terrace & terrace_area
@@ -133,16 +133,16 @@ def get_data_from_link(link):
 		terrace.append(1)
 		terrace_area.append(buffer.replace("Terrace surface ", ""))
 		print("Terrace: ", terrace[-1])
-		print("terrace area: ", terrace_area[-1])
+		print("Terrace surface: ", terrace_area[-1])
 	else:
-		terrace.append(0)
+		terrace.append(None)
 		terrace_area.append(None)
 		print("Terrace: ", terrace[-1])
-		print("Terrace area: ", terrace_area[-1])
+		print("Terrace surface: ", terrace_area[-1])
 
 	#garden & garden_area
 	buffer = soup.find_all("tr", {"class": "classified-table__row"})
-	content = [t.text for t in buffer if "Garden" in t.text]
+	content = [t.text for t in buffer if "Garden surface" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^0-9]+', '', content[0]).split())
 		garden.append(1)
@@ -150,7 +150,7 @@ def get_data_from_link(link):
 		print("Garden: ", garden[-1])
 		print("Garden area: ", garden_area[-1])
 	else:
-		garden.append(0)
+		garden.append(None)
 		garden_area.append(None)
 		print("Garden: ", garden[-1])
 		print("Garden area: ", garden_area[-1])
@@ -194,10 +194,13 @@ def get_data_from_link(link):
 	content = [t.text for t in buffer if "Swimming pool" in t.text]
 	if content:
 		buffer = " ".join(re.sub(r'[^A-Za-z0-9 -]+', '', content[0]).split())
-		swimming_pool.append(1)
+		if buffer.replace("Swimming pool ", "") == "Yes":
+			swimming_pool.append(1)
+		else:
+			swimming_pool.append(0)
 		print("swimming pool: ", swimming_pool[-1])
 	else:
-		swimming_pool.append(0)
+		swimming_pool.append(None)
 		print("swimming pool: ", swimming_pool[-1])
 
 	#state
@@ -215,7 +218,7 @@ def get_data_from_link(link):
 	df["locality"] = locality
 	df["proprety_type"] = proprety_type
 	df["price"] = price
-	df["rooms"] = rooms
+	df["bedrooms"] = rooms
 	df["area"] = area
 	df["equipped_kitchen"] = equipped_kitchen
 	df["furnished"] = furnished
@@ -234,31 +237,32 @@ def get_data_from_link(link):
 
 
 counter = 0
-i = 4
-for i in range(333):
+for i in range(4, 333):
 
-	url = f"https://www.immoweb.be/en/search/house/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=cheapest"
+	url = f"https://www.immoweb.be/en/search/house-and-apartment/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=cheapest"
 	print("\n", url, "\n")
 	driver.get(url)
 	soup = BeautifulSoup(driver.page_source, "lxml")
 
-	for link in soup.find_all("a", {"class":"card__title-link"}):
-		counter += 1
-		print(f"Page number: {i}, Link count: {counter}")
-		print(link["href"])
-		get_data_from_link(link["href"])
+	for div_containing_link in soup.find_all("li", {"class":"search-results__item"}):
+		for link in div_containing_link.find_all("a", {"class":"card__title-link"}):
+			counter += 1
+			print(f"Page number: {i}, Link count: {counter}")
+			print(link["href"])
+			get_data_from_link(link["href"])
 
-i = 0
-for i in range(1):
+for i in range(0, 10):
 
-	url = f"https://www.immoweb.be/en/search/house/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=most_expensive"
+	url = f"https://www.immoweb.be/en/search/house-and-apartment/for-sale?countries=BE&isALifeAnnuitySale=false&page={i}&orderBy=most_expensive"
 	print("\n", url, "\n")
 	driver.get(url)
 	soup = BeautifulSoup(driver.page_source, "lxml")
 
-	for link in soup.find_all("a", {"class":"card__title-link"}):
-		counter += 1
-		print(f"Page number: {i}, Link count: {counter}")
-		print(link["href"])
-		get_data_from_link(link["href"])
+	for div_containing_link in soup.find_all("li", {"class":"search-results__item"}):
+		for link in div_containing_link.find_all("a", {"class":"card__title-link"}):
+			counter += 1
+			print(f"Page number: {i}, Link count: {counter}")
+			print(link["href"])
+			get_data_from_link(link["href"])
+
 
